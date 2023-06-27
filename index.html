@@ -5,7 +5,7 @@
  console.log(params.get('key_news_url_public'));
 
  if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
-     window.location.href = 'intent://globomais?key_news_url_public='+params.get('key_news_url_public')+'?#Intent;scheme=app;package=br.com.globomagazines;end';
+     window.location.href = 'intent://globomais?#Intent;scheme=app;package=br.com.globomagazines;key_news_url_public='+params.get('key_news_url_public')+';end';
  }
 
 </script>
