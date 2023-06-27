@@ -1,3 +1,9 @@
-<a href="intent://globomais#Intent;scheme=app;package=br.com.globomagazines;end">  
-    <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png">
-</a>
+$(document).ready(function (){
+
+ var params = new window.URLSearchParams(window.location.search);
+ console.log(params.get('key_news_url_public'));
+
+ if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+     window.location.href = 'intent://globomais#Intent;scheme=app;package=br.com.globomagazines;end';
+ }
+});
