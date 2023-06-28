@@ -4,10 +4,10 @@
  console.log(params.get('key_news_url_public'));
 
 var fallbackToStore = function() {
-  window.location.replace('https://play.google.com/store/apps/details?id=br.com.globomagazines');
+  window.location.href = 'https://play.google.com/store/apps/details?id=br.com.globomagazines';
 };
 var openApp = function() {
-  window.location.replace('intent://globomais#Intent;scheme=app;package=br.com.globomagazines;S.key_news_url_public='+params.get('key_news_url_public')+';end');
+  window.location.href = 'intent://globomais#Intent;scheme=app;package=br.com.globomagazines;S.key_news_url_public='+params.get('key_news_url_public')+';end';
 };
 
 var triggerAppOpen = function() {
