@@ -29,7 +29,7 @@
       
       //document.getElementById('loader').src = 'app://globomais?key_news_url_public='+params.get('key_news_url_public');
 
-       window.location = 'app://globomais?key_news_url_public='+params.get('key_news_url_public');
+       window.location.replace('app://globomais?key_news_url_public='+params.get('key_news_url_public'));
       
       // The fallback link for Android needs to be https:// rather than market:// or the device will try to 
       // load both URLs and only the last one will win. (Especially FireFox, where an "Are You Sure" dialog will appear)
