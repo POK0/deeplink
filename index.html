@@ -12,6 +12,7 @@
   <script>(function(){
 
     var params = new window.URLSearchParams(window.location.search);
+    console.log(params.get('key_news_url_public'));
 
     // For desktop browser, remember to pass though any metadata on the link for deep linking
     var fallbackLink = params.get('key_news_url_public');
