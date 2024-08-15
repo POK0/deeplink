@@ -30,7 +30,7 @@
       //document.getElementById('loader').src = 'app://globomais?key_news_url_public='+params.get('key_news_url_public');
       //window.location.href = 'intent://globomais?#Intent;scheme=app;package=br.com.globomagazines;S.key_news_url_public='+params.get('key_news_url_public')+';end';
       
-       window.location.href = 'app://globomais?key_news_url_public='+params.get('key_news_url_public');
+       window.location.href = 'app://oglobo?key_news_url_public='+params.get('key_news_url_public');
       
       
       
@@ -38,8 +38,8 @@
       // load both URLs and only the last one will win. (Especially FireFox, where an "Are You Sure" dialog will appear)
       // on iOS we can link directly to the App Store as our app switch will fire prior to the switch
       // If you have a mobile web app, your fallback could be that instead. 
-      fallbackLink = isAndroid ? 'https://play.google.com/store/apps/details?id=br.com.globomagazines&referrer='+params.get('key_news_url_public') :
-                                 'https://apps.apple.com/br/app/globo-mais-not%C3%ADcias-e-cultura/id943871531' ;
+      fallbackLink = isAndroid ? 'https://play.google.com/store/apps/details?id=br.com.infoglobo.oglobo&referrer='+params.get('key_news_url_public') :
+                                 'https://apps.apple.com/br/app/o-globo/id390832733' ;
     }
 
     // Now we just wait for everything to execute, if the user is redirected to your custom app
