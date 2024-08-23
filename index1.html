@@ -5,7 +5,7 @@
   <title>O Globo Redirecionamento</title>
   
   <script>
-     function getMobileOperatingSystem() {
+     function getMobileOperatingSystem(url) {
 	  
 
     	 	var params = new window.URLSearchParams(window.location.search);
@@ -47,6 +47,6 @@
 	  
 </head>
 <body>
-	<button onclick="launchAndroidApp()">Deep linking test</button>
+	<button onclick="launchAndroidApp('https://oglobo.globo.com/blogs/pulso/post/2024/08/exclusivo-novo-datafolha-altera-cenarios-em-sp-rj-e-bh-aponta-media-de-pesquisas-do-rali-veja-os-numeros.ghtml')">Deep linking test</button>
 </body>
 </html>
