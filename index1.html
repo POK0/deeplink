@@ -35,7 +35,7 @@
 		      // load both URLs and only the last one will win. (Especially FireFox, where an "Are You Sure" dialog will appear)
 		      // on iOS we can link directly to the App Store as our app switch will fire prior to the switch
 		      // If you have a mobile web app, your fallback could be that instead. 
-		      fallbackLink = isAndroid ? 'https://play.google.com/store/apps/details?id=br.com.infoglobo.oglobo&referrer='+publicUrl :
+		      fallbackLink = isAndroid ? 'app://play.google.com/store/apps/details?id=br.com.infoglobo.oglobo&referrer='+publicUrl :
 	                                 'https://apps.apple.com/br/app/o-globo/id390832733' ;      
 		    }
 
