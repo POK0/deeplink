@@ -28,8 +28,8 @@
 		      //window.location.href = 'intent://globomais?#Intent;scheme=app;package=br.com.globomagazines;S.key_news_url_public='+params.get('key_news_url_public')+';end';
 
 		      var materia = "materia"
-		       //window.location.href = 'app://oglobo.globo.com/redirect?public_url='+publicUrl+"&content_type="+materia;
-              		window.open("app://oglobo.globo.com/redirect?public_url="+publicUrl+"&content_type="+materia, '_blank');
+		       window.location.href = 'app://oglobo.globo.com/redirect?public_url='+publicUrl+"&content_type="+materia;
+              		// window.open("app://oglobo.globo.com/redirect?public_url="+publicUrl+"&content_type="+materia, '_blank');
 
       
       
@@ -46,11 +46,11 @@
 	    // we will replace the current URL with the fallbackLink (store URL or desktop URL as appropriate)
 	    window.setTimeout(function (){ if (document.hasFocus()) { 
 
-		window.close()
-		window.open(fallbackLink, '_blank');
+		// window.close()
+		// window.open(fallbackLink, '_blank');
 
 		    
-		    // window.location.replace(fallbackLink) ;
+		    window.location.replace(fallbackLink) ;
 	    } }, 1000);
 	  }</script>
 	  
